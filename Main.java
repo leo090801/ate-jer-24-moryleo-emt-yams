@@ -14,7 +14,7 @@ public class Main {
     public static final int NBRE_DE_DEE = 5;
 
     /**
-     * simule le lancer d'un dée
+     * Simule le lancer d'un dée
      * @return le résultat du lancer
      */
     static int lancerDee() {
@@ -51,6 +51,10 @@ public class Main {
         return total;
     }
 
+    /**
+     * affiche les dés
+     * @param dee dés à afficher
+     */
     static void afficherDee(int[] dee) {
 
         System.out.print("Résultat : ");
