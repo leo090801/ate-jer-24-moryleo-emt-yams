@@ -1,15 +1,11 @@
 public class Combinaisons {
 
-    public enum TypeCombinaison {
-        YAMS, FULL, CARRE, BRELAN, PETITE_SUITE, GRANDE_SUITE, NB_CHANCE
-    }
-
     /**
-     * calcule le nombre de chaque chiffre et calcule si il y a un brelan
+     * Calcule le nombre de chaque chiffre et calcule si il y a un brelan.
      * @param dee les dés lancés
      * @return 0 si il n'y a pas de brelan et sinon l'entier qui correspond au brelan
      */
-    public int estBrelan(int[] dee) {
+    public static int estBrelan(int[] dee) {
         int[] nbreDeDesPourChaqueNombre = new int[6];
 
         // Compte le nombre de fois qu'il y a eu chaque chiffre.
@@ -30,7 +26,7 @@ public class Combinaisons {
      * @param dee les dés lancés.
      * @return 0 s'il n'y a pas de carre et sinon l'entier qui correspond au carre.
      */
-    public int estCarre(int[] dee) {
+    public static int estCarre(int[] dee) {
         int[] nbreDeDesPourChaqueNombre = new int[6];
 
         // Compte le nombre de fois qu'il y a eu chaque chiffre.
@@ -51,7 +47,7 @@ public class Combinaisons {
      * @param dee La suite de Dés
      * @return true si c'est un yams false sinon
      */
-    public boolean estYams(int[] dee) {
+    public static boolean estYams(int[] dee) {
 
         int[] nbreDeDesPourChaqueNombre = new int[6];
 
@@ -73,7 +69,7 @@ public class Combinaisons {
      * @param dee La suite de Dés.
      * @return true si c'est un full false sinon
      */
-    public boolean estFull(int[] dee) {
+    public static boolean estFull(int[] dee) {
 
         int[] nbreDeDesPourChaqueNombre = new int[6];
 
@@ -102,7 +98,7 @@ public class Combinaisons {
      * @param dee les dés lancés
      * @return true si c'est une grande suite et false sinon
      */
-    public boolean estGrandeSuite(int[] dee) {
+    public static boolean estGrandeSuite(int[] dee) {
 
         int nbreSuite = 1;
 
@@ -135,7 +131,7 @@ public class Combinaisons {
      * @param dee Dés lancés
      * @return true si c'est une petite suite, false sinon
      */
-    public boolean estPetiteSuite(int[] dee) {
+    public static boolean estPetiteSuite(int[] dee) {
 
         int nbreSuite = 1;
 

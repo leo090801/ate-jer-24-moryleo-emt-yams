@@ -58,4 +58,18 @@ public class MainDeDé {
     public int[] getMainDeDes() {
         return mainDeDes;
     }
+
+    /**
+     * Affiche les dés
+     * @param dee dés à afficher
+     */
+    public  void afficherDee() {
+
+        System.out.print("Résultat : ");
+
+        for (int indexArray = 0; indexArray < mainDeDes.length; indexArray++) {
+            System.out.print(mainDeDes[indexArray] + " ");
+        }
+        System.out.print("\n");
+    }
 }
